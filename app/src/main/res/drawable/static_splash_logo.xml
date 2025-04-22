@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <group
+        android:name="logo_container"
+        android:pivotX="100"
+        android:pivotY="100">
+        
+        <!-- Placeholder rectangle that will show the bitmap -->
+        <path
+            android:name="logo_background"
+            android:pathData="M25,25 h150 v150 h-150z"
+            android:fillColor="#00000000" />
+    </group>
+</vector> 

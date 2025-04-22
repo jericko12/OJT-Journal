@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="200dp"
+            android:height="200dp"
+            android:viewportWidth="200"
+            android:viewportHeight="200">
+            
+            <group
+                android:name="logo_group"
+                android:pivotX="100"
+                android:pivotY="100">
+                <!-- Logo image -->
+                <path
+                    android:name="logo_holder"
+                    android:pathData="M25,25 h150 v150 h-150z">
+                    <aapt:attr name="android:fillColor">
+                        <bitmap
+                            android:src="@drawable/splash_logo"
+                            android:gravity="fill"/>
+                    </aapt:attr>
+                </path>
+            </group>
+        </vector>
+    </aapt:attr>
+    
+    <target android:name="logo_group">
+        <!-- Vertical bounce -->
+        <animator
+            android:propertyName="scaleY"
+            android:duration="600"
+            android:valueFrom="1.0"
+            android:valueTo="0.85"
+            android:valueType="floatType"
+            android:repeatMode="reverse"
+            android:repeatCount="infinite"
+            android:interpolator="@android:interpolator/accelerate_decelerate"/>
+            
+        <!-- Horizontal squeeze -->
+        <animator
+            android:propertyName="scaleX"
+            android:duration="600"
+            android:valueFrom="1.0"
+            android:valueTo="0.95"
+            android:valueType="floatType"
+            android:repeatMode="reverse"
+            android:repeatCount="infinite"
+            android:interpolator="@android:interpolator/accelerate_decelerate"/>
+    </target>
+</animated-vector> 

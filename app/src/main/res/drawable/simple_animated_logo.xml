@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- Background color can be transparent or match your app's background -->
+        <color android:color="@android:color/transparent" />
+    </item>
+    <item
+        android:drawable="@drawable/bounce_logo"
+        android:width="200dp"
+        android:height="200dp"
+        android:gravity="center" />
+</layer-list> 
